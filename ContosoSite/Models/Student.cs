@@ -11,8 +11,7 @@ namespace ContosoSite.Models
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-
+    
     public partial class Student
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -22,16 +21,9 @@ namespace ContosoSite.Models
         }
     
         public int StudentID { get; set; }
-
-        [StringLength(50)]
         public string LastName { get; set; }
-
-        [StringLength(50)]
         public string FirstName { get; set; }
-
         public Nullable<System.DateTime> EnrollmentDate { get; set; }
-
-        [StringLength(50)]
         public string MiddleName { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
